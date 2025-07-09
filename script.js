@@ -11,16 +11,10 @@ shareBtn.onclick = () => {
     count++;
     counter.textContent = `Click count: ${count}/5`;
 
-    // Custom WhatsApp Message with clickable link
-    const message = `Hey Buddy! 👩‍💻
-
-Join Tech For Girls Community 💡
-
-Register here:
-https://manoharreddy.github.io/tech-for-girls-form/`;
-
+        const message = "Hey Buddy! 👩‍💻 Join Tech For Girls Community 💡 Register here: https://manoharreddy.github.io/tech-for-girls-form/";
     const whatsappURL = "https://wa.me/?text=" + encodeURIComponent(message);
     window.open(whatsappURL, "_blank");
+
 
     if (count === 5) {
       alert("Sharing complete. Please continue.");
